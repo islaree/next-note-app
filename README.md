@@ -1,50 +1,21 @@
-# React + TypeScript + Vite
+## プロジェクト概要
+メモ管理アプリケーション
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 要件
+- メモの追加: ユーザーが新しいメモを追加できる。
+- メモの表示: 追加されたメモがリストとして表示される。
+- メモの削除: ユーザーが不要なメモを削除できる。
+- メモの編集: 既存のメモを編集できる。
+- フィルタリング（オプション）: メモを簡単にフィルタリング（例：重要なメモ、すべてのメモなど）。
 
-Currently, two official plugins are available:
+### テスト戦略
+- ユニットテスト: コンポーネントのロジックや状態管理をテストする。メモの追加、表示、削除、編集機能をそれぞれテストする。
+- 統合テスト: コンポーネント間の連携をテストする。メモ追加後の表示や編集後の表示が正しく行われるかテストする。
+- エンドツーエンドテスト（オプション）: 実際のユーザー操作フローを通じてアプリケーション全体の動作をテストする。
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### 開発手順
+1. プロジェクトのセットアップ: Viteを使用してプロジェクトを作成する。必要なテストライブラリ（Jest、React Testing Libraryなど）をインストールする。
+2. 機能の実装: メモの追加、表示、削除、編集の各機能を実装する。
+3. ユニットテストの作成: メモコンポーネントの追加、表示、削除、編集機能に対してユニットテストを作成する。
+4. 統合テストの作成: 複数のコンポーネントや機能が連携して動作するかをテストする。
+5. （オプション）エンドツーエンドテストの作成: Cypressなどを使って、アプリケーション全体の動作をテストする。
