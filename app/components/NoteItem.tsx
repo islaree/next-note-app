@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
-import { Note } from '../types/note';
+import { Note } from '../../types/note';
 import { Bookmark, SquarePen, Trash2 } from 'lucide-react';
 
 export default function NoteItem({

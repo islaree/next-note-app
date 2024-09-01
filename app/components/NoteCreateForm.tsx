@@ -1,5 +1,5 @@
 import { FormEvent, useState } from 'react';
-import { Note } from '../types/note';
+import { Note } from '../../types/note';
 import { SendHorizontal } from 'lucide-react';
 
 export default function NoteCreateForm({ onAdd }: { onAdd: (newNote: Note) => void }) {

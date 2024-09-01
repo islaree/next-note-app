@@ -1,9 +1,11 @@
-import { useState } from 'react';
-import NoteCreateForm from './components/NoteCreateForm';
-import NoteList from './components/NoteList';
-import { Note, Notes } from './types/note';
+'use client';
 
-export default function App() {
+import { useState } from 'react';
+import NoteCreateForm from '@/app/components/NoteCreateForm';
+import NoteList from '@/app/components/NoteList';
+import { Note, Notes } from '@/types/note';
+
+export default function Home() {
   const [notes, setNotes] = useState<Notes>([]);
 
   const handleAddNote = (newNote: Note) => {

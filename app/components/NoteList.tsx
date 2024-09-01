@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Note, Notes } from '../types/note';
+import { Note, Notes } from '../../types/note';
 import NoteItem from './NoteItem';
 
 export default function NoteList({
