@@ -1,25 +1,36 @@
-## プロジェクト概要
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-メモ管理アプリケーション
+## Getting Started
 
-### 要件
+First, run the development server:
 
-- [x] メモの追加: ユーザーが新しいメモを追加できる。
-- [x] メモの表示: 追加されたメモがリストとして表示される。
-- [x] メモの削除: ユーザーが不要なメモを削除できる。
-- [x] メモの編集: 既存のメモを編集できる。
-- [x] フィルタリング（オプション）: メモを簡単にフィルタリング（例：重要なメモ、すべてのメモなど）。
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-### テスト戦略
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- [ ] ユニットテスト: コンポーネントのロジックや状態管理をテストする。メモの追加、表示、削除、編集機能をそれぞれテストする。
-- [ ] 統合テスト: コンポーネント間の連携をテストする。メモ追加後の表示や編集後の表示が正しく行われるかテストする。
-- [ ] エンドツーエンドテスト（オプション）: 実際のユーザー操作フローを通じてアプリケーション全体の動作をテストする。
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-### 開発手順
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-1. [x] プロジェクトのセットアップ: Viteを使用してプロジェクトを作成する。必要なテストライブラリ（Jest、React Testing Libraryなど）をインストールする。
-2. [x] 機能の実装: メモの追加、表示、削除、編集の各機能を実装する。
-3. [ ] ユニットテストの作成: メモコンポーネントの追加、表示、削除、編集機能に対してユニットテストを作成する。
-4. [ ] 統合テストの作成: 複数のコンポーネントや機能が連携して動作するかをテストする。
-5. [ ]（オプション）エンドツーエンドテストの作成: Cypressなどを使って、アプリケーション全体の動作をテストする。
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
